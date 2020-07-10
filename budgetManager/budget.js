@@ -1,7 +1,7 @@
 chrome.storage.sync.get([ 'total' , 'limit' ] ,function(budget){
     document.getElementById('total').textContent = budget.total;
     document.getElementById('limit').textContent = budget.limit;
-})
+});
 
 document.getElementById('spendAmount').addEventListener('click' , (e) => {
     chrome.storage.sync.get('total', function(budget){
